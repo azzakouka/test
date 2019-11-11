@@ -1,0 +1,28 @@
+<h1>{{titre}}</h1>
+{{datejour | currentdate}}
+<div>
+    {{films.titre}}<br>
+    {{films.affiche}}  Durée:{{films.duree}} minutes Profil <select [(ngModel)]="ch">
+        <option *ngFor="let t of profil">{{t}}</option>
+        </select>
+</div>
+
+<div>
+    {{films.titre}}<br>
+    {{films.affiche}}  Durée:{{films.duree}} minutes Profil <select [(ngModel)]="ch">
+        <option *ngFor="let t of profil">{{t}}</option>
+        </select>
+</div>
+
+<div>
+    {{films.titre}}<br>
+    {{films.affiche}}  Durée:{{films.duree}} minutes Profil <select [(ngModel)]="ch">
+        <option *ngFor="let t of profil">{{t}}</option>
+        </select>
+</div>
+
+<p>donnez la duree minimale du film <input type="text"name="duree">
+<p *ngIf="duree.value>  ; then active ; else desactive">
+    <ng-template #active>
+    
+    </ng-template>
